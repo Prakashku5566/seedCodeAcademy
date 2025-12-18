@@ -28,11 +28,10 @@ export default function CoursePage() {
         <div className='absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-purple-500/10'></div>
         <div className='absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl'></div>
         <div className='absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl'></div>
-        
         <div className='max-w-7xl mx-auto px-6 py-12 relative z-10'>
           {/* Back Button */}
           <Link
-            to='/'
+            to='/courses'
             className='inline-flex items-center gap-2 px-4 py-2 glass-card hover:bg-white/10 transition mb-8 group'
           >
             <ArrowLeft size={20} className='group-hover:-translate-x-1 transition-transform' /> Back to Courses
@@ -124,15 +123,13 @@ export default function CoursePage() {
               <button
                 key={index}
                 onClick={() => setActiveModule(index)}
-                className={`flex items-center gap-3 px-6 py-4 rounded-xl font-semibold whitespace-nowrap transition-all duration-300 ${
-                  activeModule === index
-                    ? 'bg-gradient-to-r from-primary to-primary-dark text-white shadow-lg shadow-primary/30 scale-105'
-                    : 'glass-card hover:bg-white/10'
-                }`}
+                className={`flex items-center gap-3 px-6 py-4 rounded-xl font-semibold whitespace-nowrap transition-all duration-300 ${activeModule === index
+                  ? 'bg-gradient-to-r from-primary to-primary-dark text-white shadow-lg shadow-primary/30 scale-105'
+                  : 'glass-card hover:bg-white/10'
+                  }`}
               >
-                <span className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
-                  activeModule === index ? 'bg-white/20' : 'bg-primary/20 text-primary'
-                }`}>
+                <span className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${activeModule === index ? 'bg-white/20' : 'bg-primary/20 text-primary'
+                  }`}>
                   {index + 1}
                 </span>
                 <span className='hidden sm:inline'>Module {index + 1}</span>
@@ -148,7 +145,7 @@ export default function CoursePage() {
             <span className='text-primary font-bold'>{activeModule + 1} / {course.curriculum?.length}</span>
           </div>
           <div className='w-full h-2 bg-white/10 rounded-full overflow-hidden'>
-            <div 
+            <div
               className='h-full bg-gradient-to-r from-primary to-purple-500 rounded-full transition-all duration-500'
               style={{ width: `${((activeModule + 1) / (course.curriculum?.length || 1)) * 100}%` }}
             ></div>
@@ -163,16 +160,14 @@ export default function CoursePage() {
               <div
                 key={index}
                 onClick={() => setActiveModule(index)}
-                className={`p-4 rounded-xl cursor-pointer transition-all duration-300 ${
-                  activeModule === index
-                    ? 'bg-gradient-to-r from-primary/20 to-purple-500/20 border-l-4 border-primary'
-                    : 'glass-card hover:bg-white/5'
-                }`}
+                className={`p-4 rounded-xl cursor-pointer transition-all duration-300 ${activeModule === index
+                  ? 'bg-gradient-to-r from-primary/20 to-purple-500/20 border-l-4 border-primary'
+                  : 'glass-card hover:bg-white/5'
+                  }`}
               >
                 <div className='flex items-center gap-3'>
-                  <div className={`w-10 h-10 rounded-full flex items-center justify-center ${
-                    activeModule === index ? 'bg-primary text-white' : 'bg-white/10'
-                  }`}>
+                  <div className={`w-10 h-10 rounded-full flex items-center justify-center ${activeModule === index ? 'bg-primary text-white' : 'bg-white/10'
+                    }`}>
                     {activeModule > index ? (
                       <CheckCircle size={20} />
                     ) : activeModule === index ? (
@@ -220,8 +215,8 @@ export default function CoursePage() {
                   </h4>
                   <div className='grid sm:grid-cols-2 gap-4 mb-8'>
                     {course.curriculum[activeModule].topics.map((topic, i) => (
-                      <div 
-                        key={i} 
+                      <div
+                        key={i}
                         className='flex items-start gap-3 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition group'
                       >
                         <div className='w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-white transition'>
@@ -257,22 +252,20 @@ export default function CoursePage() {
                     <button
                       onClick={() => setActiveModule(Math.max(0, activeModule - 1))}
                       disabled={activeModule === 0}
-                      className={`px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition ${
-                        activeModule === 0
-                          ? 'bg-white/5 text-gray-500 cursor-not-allowed'
-                          : 'glass-card hover:bg-white/10'
-                      }`}
+                      className={`px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition ${activeModule === 0
+                        ? 'bg-white/5 text-gray-500 cursor-not-allowed'
+                        : 'glass-card hover:bg-white/10'
+                        }`}
                     >
                       <ArrowLeft size={18} /> Previous Module
                     </button>
                     <button
                       onClick={() => setActiveModule(Math.min((course.curriculum?.length || 1) - 1, activeModule + 1))}
                       disabled={activeModule === (course.curriculum?.length || 1) - 1}
-                      className={`px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition ${
-                        activeModule === (course.curriculum?.length || 1) - 1
-                          ? 'bg-white/5 text-gray-500 cursor-not-allowed'
-                          : 'bg-gradient-to-r from-primary to-primary-dark hover:shadow-lg hover:shadow-primary/30'
-                      }`}
+                      className={`px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition ${activeModule === (course.curriculum?.length || 1) - 1
+                        ? 'bg-white/5 text-gray-500 cursor-not-allowed'
+                        : 'bg-gradient-to-r from-primary to-primary-dark hover:shadow-lg hover:shadow-primary/30'
+                        }`}
                     >
                       Next Module <ChevronRight size={18} />
                     </button>
