@@ -17,13 +17,14 @@ export default function Navbar() {
   };
 
   const handleCoursesClick = (e) => {
+    console.log("location.pathname", location.pathname);
     e.preventDefault();
-    if (location.pathname === '/') {
+    if (location.pathname === '/courses') {
       // Already on home page, just scroll to courses
       document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' });
     } else {
       // Navigate to home then scroll
-      navigate('/');
+      navigate('/courses');
       setTimeout(() => {
         document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' });
       }, 150);
@@ -33,7 +34,7 @@ export default function Navbar() {
 
   // Scroll to courses if coming from another page with hash
   useEffect(() => {
-    if (location.pathname === '/' && location.hash === '#courses') {
+    if (location.pathname === '/' && location.hash === '/courses') {
       setTimeout(() => {
         document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' });
       }, 150);
@@ -46,7 +47,7 @@ export default function Navbar() {
         <div className='flex items-center justify-between'>
           {/* Logo */}
           <Link to='/' onClick={handleHomeClick} className='text-2xl font-bold gradient-text'>
-            SEEDCODE
+            SEEDCODE ACADEMY
           </Link>
 
           {/* Desktop Menu */}
@@ -54,16 +55,16 @@ export default function Navbar() {
             <Link to='/' onClick={handleHomeClick} className='hover:text-primary transition'>
               Home
             </Link>
-            <a href='/#courses' onClick={handleCoursesClick} className='hover:text-primary transition cursor-pointer'>
+            <Link to='/courses' onClick={handleCoursesClick} className='hover:text-primary transition cursor-pointer'>
               Courses
-            </a>
+            </Link>
             <Link to='/about' className='hover:text-primary transition'>
               About
             </Link>
             <Link to='/contact' className='hover:text-primary transition'>
               Contact
             </Link>
-            <Link to='/#courses' onClick={handleCoursesClick} className='px-6 py-2 bg-gradient-to-r from-primary to-primary-dark rounded-full font-semibold hover:shadow-lg hover:shadow-primary/50 transition'>
+            <Link to='/get-started' onClick={handleCoursesClick} className='px-6 py-2 bg-gradient-to-r from-primary to-primary-dark rounded-full font-semibold hover:shadow-lg hover:shadow-primary/50 transition'>
               Get Started
             </Link>
           </div>
@@ -85,7 +86,7 @@ export default function Navbar() {
               Home
             </Link>
             <a
-              href='/#courses'
+              href='/courses'
               onClick={handleCoursesClick}
               className='block hover:text-primary transition cursor-pointer'
             >
@@ -106,7 +107,7 @@ export default function Navbar() {
               Contact
             </Link>
             <Link
-              to='/#courses'
+              to='/home'
               onClick={handleCoursesClick}
               className='block w-full px-6 py-2 bg-gradient-to-r from-primary to-primary-dark rounded-full font-semibold text-center'
             >

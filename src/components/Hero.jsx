@@ -1,6 +1,11 @@
 import { ArrowRight, Play } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
+  const navigate = useNavigate();
+  const handleExploreClick = () => {
+    navigate('/courses');
+  }
   return (
     <section className='min-h-screen flex items-center justify-center relative overflow-hidden pt-20'>
       {/* Animated Background */}
@@ -19,7 +24,7 @@ export default function Hero() {
         </p>
 
         <div className='flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up'>
-          <button className='px-8 py-4 bg-gradient-to-r from-primary to-primary-dark rounded-full font-semibold text-lg flex items-center gap-2 hover:shadow-2xl hover:shadow-primary/50 transition transform hover:scale-105'>
+          <button onClick={handleExploreClick} className='px-8 py-4 bg-gradient-to-r from-primary to-primary-dark rounded-full font-semibold text-lg flex items-center gap-2 hover:shadow-2xl hover:shadow-primary/50 transition transform hover:scale-105'>
             Explore Courses <ArrowRight size={20} />
           </button>
           <button className='px-8 py-4 border-2 border-primary rounded-full font-semibold text-lg flex items-center gap-2 hover:bg-primary/10 transition'>

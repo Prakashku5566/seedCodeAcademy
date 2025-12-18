@@ -6,7 +6,7 @@ export default function Footer() {
     if (window.location.pathname === '/') {
       document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' });
     } else {
-      window.location.href = '/#courses';
+      window.location.href = '/courses';
     }
   };
 
@@ -69,14 +69,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href='#' className='hover:text-primary transition'>
+                <Link to='/careers' className='hover:text-primary transition'>
                   Careers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='#' className='hover:text-primary transition'>
+                <Link to='/blog' className='hover:text-primary transition'>
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
                 <Link to='/contact' className='hover:text-primary transition'>
@@ -91,24 +91,24 @@ export default function Footer() {
             <h4 className='font-semibold mb-4 text-white'>Resources</h4>
             <ul className='space-y-3 text-gray-400'>
               <li>
-                <a href='#' className='hover:text-primary transition'>
+                <Link to='/documentation' className='hover:text-primary transition'>
                   Documentation
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='#' className='hover:text-primary transition'>
+                <Link to='/community' className='hover:text-primary transition'>
                   Community
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='#' className='hover:text-primary transition'>
+                <Link to='/support' className='hover:text-primary transition'>
                   Support
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='#' className='hover:text-primary transition'>
+                <Link to='/faq' className='hover:text-primary transition'>
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -118,19 +118,19 @@ export default function Footer() {
             <h4 className='font-semibold mb-4 text-white'>Legal</h4>
             <ul className='space-y-3 text-gray-400'>
               <li>
-                <a href='#' className='hover:text-primary transition'>
+                <Link to='/privacy-policy' className='hover:text-primary transition'>
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='#' className='hover:text-primary transition'>
+                <Link to='/terms-of-service' className='hover:text-primary transition'>
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='#' className='hover:text-primary transition'>
+                <Link to='/refund-policy' className='hover:text-primary transition'>
                   Refund Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
