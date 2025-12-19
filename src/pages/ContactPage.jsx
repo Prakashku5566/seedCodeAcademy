@@ -66,8 +66,8 @@ export default function ContactPage() {
     const socials = [
         { icon: <Linkedin size={24} />, name: "LinkedIn", link: "https://www.linkedin.com/in/seedcode-Academy-202b4439a/" },
         { icon: <Twitter size={24} />, name: "Twitter", link: "https://x.com/seedCodeAcademy" },
-        { icon: <Instagram size={24} />, name: "Instagram", link: "https://www.instagram.com/seedcode_academy?igsh=ZmVmeWR1em43N2Yz" },
-        { icon: <Youtube size={24} />, name: "YouTube", link: "https://youtube.com/@seedcodeacademy?si=YeVTELCvweUt8kEx" },
+        { icon: <Instagram size={24} />, name: "Instagram", link: "https://www.instagram.com/seedcode_academy/?igsh=ZmVmeWR1em43N2Yz#" },
+        { icon: <Youtube size={24} />, name: "YouTube", link: "https://www.youtube.com/@seedcodeacademy" },
     ];
 
     const faqs = [
