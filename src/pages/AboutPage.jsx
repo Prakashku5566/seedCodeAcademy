@@ -44,10 +44,10 @@ export default function AboutPage() {
     ];
 
     const team = [
-        { name: "Prakash Kumar", role: "Founder & CEO", emoji: "👨‍💻" },
-        { name: "Priya Sharma", role: "Head of Curriculum", emoji: "👩‍🏫" },
-        { name: "Rahul Verma", role: "Lead Instructor", emoji: "👨‍🎓" },
-        { name: "Sneha Patel", role: "Student Success", emoji: "🎯" },
+        { name: "Shalu Bharti", role: "Instructor", emoji: "🎯" },
+        { name: "Tv Singh", role: "Instructor", emoji: "👨‍🎓" },
+        { name: "Bk Gupta", role: "Instructor", emoji: "👩‍🏫" },
+        { name: "Pk Singh", role: "Instructor", emoji: "👨‍💻" },
     ];
 
     return (
