@@ -88,9 +88,23 @@ export default function CoursePage() {
 
             {/* Course Icon Card */}
             <div className='hidden lg:block'>
-              <div className='glass-card p-12 text-center relative overflow-hidden'>
+              <div className='glass-card p-6 text-center relative overflow-hidden'>
                 <div className='absolute inset-0 bg-gradient-to-br from-primary/10 to-purple-500/10'></div>
-                <div className='text-9xl relative z-10 animate-bounce'>{course.icon}</div>
+                <div className="text-9xl relative z-10">
+                  {course.certificate ? (
+                    <img
+                      src={course.certificate}
+                      alt={course.title}
+                      className="h-full w-full object-contain"
+                      onError={(e) => {
+                        e.target.style.display = "none";
+                      }}
+                    />
+                  ) : (
+                    course.icon
+                  )}
+                </div>
+
                 <div className='mt-6 relative z-10'>
                   <div className='flex items-center justify-center gap-2 text-primary mb-2'>
                     <Award size={24} />

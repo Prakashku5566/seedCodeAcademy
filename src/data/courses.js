@@ -1,101 +1,95 @@
 export const courses = [
   {
-    id: "mern-stack",
-    title: "Full Stack Development with Node (MERN)",
-    description:
-      "Master the complete MERN stack from HTML/CSS to production deployment with authentication, real-time features, and cloud hosting.",
-    icon: "💻",
-    image: 'https://i.ibb.co/PZDPgZ6m/full-Stack-mern.png',
-    tag: "FULL STACK",
-    duration: "28 Weeks (7 Months)",
-    modules: 7,
-    price: 18999,
-    curriculum: [
-      {
-        title: "Month 1 — Frontend Foundations",
-        weeks: "Weeks 1–4",
-        topics: [
-          "HTML5, CSS3, Semantic tags",
-          "Flexbox & Grid layouts",
-          "Responsive design & animations",
-          "SASS/SCSS preprocessing",
-        ],
-        project: "Complete Portfolio Website",
-      },
-      {
-        title: "Month 2 — JavaScript Programming",
-        weeks: "Weeks 5–8",
-        topics: [
-          "JS fundamentals & ES6+",
-          "DOM manipulation & events",
-          "Async/Await & Promises",
-          "API integration",
-        ],
-        project: "Weather App with API",
-      },
-      {
-        title: "Month 3 — React.js",
-        weeks: "Weeks 9–12",
-        topics: [
-          "Components, Props, State",
-          "Hooks (useState, useEffect, useContext)",
-          "React Router & Protected routes",
-          "Form handling & validation",
-        ],
-        project: "E-commerce Frontend UI",
-      },
-      {
-        title: "Month 4 — Advanced React",
-        weeks: "Weeks 13–16",
-        topics: [
-          "Redux Toolkit state management",
-          "Performance optimization",
-          "Testing with Jest",
-          "Code splitting & lazy loading",
-        ],
-        project: "Dashboard with Authentication",
-      },
-      {
-        title: "Month 5 — Backend with Node.js",
-        weeks: "Weeks 17–20",
-        topics: [
-          "Node.js & Express fundamentals",
-          "MongoDB & Mongoose",
-          "JWT Authentication",
-          "RESTful API design",
-        ],
-        project: "Auth API with email verification",
-      },
-      {
-        title: "Month 6 — Full Stack Integration",
-        weeks: "Weeks 21–24",
-        topics: [
-          "React + Node integration",
-          "File uploads with Multer",
-          "Real-time with Socket.io",
-          "Payment integration (Razorpay/Stripe)",
-        ],
-        project: "Task Management System",
-      },
-      {
-        title: "Month 7 — Deployment",
-        weeks: "Weeks 25–28",
-        topics: [
-          "Testing (Unit & Integration)",
-          "CI/CD with GitHub Actions",
-          "Cloud deployment (Vercel, Render)",
-          "MongoDB Atlas setup",
-        ],
-        project: "Complete Industry-level MERN App",
-      },
-    ],
-  },
+  id: "mern-stack",
+  title: "Full Stack Development with Node (MERN)",
+  description:
+    "Master the complete MERN stack from HTML/CSS to production deployment with authentication, real-time features, and cloud hosting.",
+  icon: "💻",
+  certificate: "https://i.ibb.co/bRzjTmzL/full-stack.png",
+  image: "https://i.ibb.co/PZDPgZ6m/full-Stack-mern.png",
+  tag: "FULL STACK",
+  duration: "24 Weeks (6 Months)",
+  modules: 6,
+  price: 18999,
+  curriculum: [
+    {
+      title: "Month 1 — Frontend Foundations",
+      weeks: "Weeks 1–4",
+      topics: [
+        "HTML5, CSS3, Semantic tags",
+        "Flexbox & Grid layouts",
+        "Responsive design & animations",
+        "SASS/SCSS preprocessing",
+      ],
+      project: "Personal Portfolio Website",
+    },
+    {
+      title: "Month 2 — JavaScript Programming",
+      weeks: "Weeks 5–8",
+      topics: [
+        "JavaScript fundamentals & ES6+",
+        "DOM manipulation & events",
+        "Async/Await & Promises",
+        "API integration using Fetch/Axios",
+      ],
+      project: "Weather App with Live API",
+    },
+    {
+      title: "Month 3 — React.js Core",
+      weeks: "Weeks 9–12",
+      topics: [
+        "Components, Props & State",
+        "Hooks (useState, useEffect, useContext)",
+        "React Router & Protected Routes",
+        "Forms & validation",
+      ],
+      project: "E-commerce Frontend Application",
+    },
+    {
+      title: "Month 4 — Advanced React",
+      weeks: "Weeks 13–16",
+      topics: [
+        "Redux Toolkit & global state",
+        "Authentication flows",
+        "Performance optimization",
+        "Testing with Jest",
+      ],
+      project: "Admin Dashboard with Login System",
+    },
+    {
+      title: "Month 5 —  Node.js & MongoDB",
+      weeks: "Weeks 17–20",
+      topics: [
+        "Node.js & Express.js fundamentals",
+        "MongoDB & Mongoose",
+        "JWT Authentication & Authorization",
+        "RESTful API design",
+      ],
+      project: "Secure Auth API with Email Verification",
+    },
+    {
+      title: "Month 6 — Full Stack Integration",
+      weeks: "Weeks 21–24",
+      topics: [
+        "React + Node full stack integration",
+        "File uploads (Multer)",
+        "Real-time features with Socket.io",
+        "Payment integration (Razorpay/Stripe)",
+        "Cloud deployment (Vercel, Render)",
+        "MongoDB Atlas & CI/CD basics",
+      ],
+      project: "Industry-Level MERN Full Stack Application",
+    },
+  ],
+},
+
   {
     id: "python-django",
     title: "Full Stack with Python (Django)",
     description:
       "Learn Django framework, REST APIs, PostgreSQL, React integration, and AWS deployment for enterprise-level applications.",
     icon: "🐍",
+    certificate:'https://i.ibb.co/bRzjTmzL/full-stack.png',
     image:'https://i.ibb.co/WN552CXX/full-Stack-python.png',
     tag: "FULL STACK",
     duration: "24 Weeks (6 Months)",
@@ -175,6 +169,7 @@ export const courses = [
     description:
       "Become a React expert with HTML, CSS, JavaScript, Redux Toolkit, performance optimization, and production-ready projects.",
     icon: "⚛️",
+    certificate:'https://i.ibb.co/TGq77s8/frontend.png',
     image:'https://i.ibb.co/MyScpn93/frontend-deevelopment.png',
     tag: "FRONTEND",
     duration: "16 Weeks (4 Months)",
@@ -233,15 +228,16 @@ export const courses = [
     description:
       "Master backend development with APIs, databases, authentication, microservices, and cloud deployment strategies.",
     icon: "🔧",
+    certificate:'https://i.ibb.co/pBwKgtSM/backcend.png',
     image:'https://i.ibb.co/p6gmm6ST/backend.png',
     tag: "BACKEND",
-    duration: "20 Weeks (5 Months)",
+    duration: "16 Weeks (4 Months)",
     modules: 5,
     price: 11999,
     curriculum: [
       {
         title: "Backend Foundations",
-        weeks: "Weeks 1–4",
+        weeks: "Weeks 1–3",
         topics: [
           "Node.js fundamentals",
           "Express.js framework",
@@ -252,7 +248,7 @@ export const courses = [
       },
       {
         title: "Database Management",
-        weeks: "Weeks 5–8",
+        weeks: "Weeks 4–7",
         topics: [
           "SQL (PostgreSQL/MySQL)",
           "NoSQL (MongoDB)",
@@ -263,7 +259,7 @@ export const courses = [
       },
       {
         title: "Authentication & Security",
-        weeks: "Weeks 9–12",
+        weeks: "Weeks 8–11",
         topics: [
           "JWT authentication",
           "OAuth integration",
@@ -274,7 +270,7 @@ export const courses = [
       },
       {
         title: "Advanced Backend",
-        weeks: "Weeks 13–16",
+        weeks: "Weeks 12–15",
         topics: [
           "Microservices architecture",
           "Redis caching",
@@ -285,7 +281,7 @@ export const courses = [
       },
       {
         title: "Cloud & Deployment",
-        weeks: "Weeks 17–20",
+        weeks: "Weeks 16",
         topics: [
           "Docker containers",
           "AWS deployment",
@@ -302,6 +298,7 @@ export const courses = [
     description:
       "Build cross-platform mobile apps with navigation, API integration, device features, and publish to App Store and Play Store.",
     icon: "📱",
+    certificate:'https://i.ibb.co/bjcK6VKN/appdevelopment.png',
     image:'https://i.ibb.co/ym4s1y96/app-development-react.png',
     tag: "MOBILE",
     duration: "20 Weeks (5 Months)",
@@ -360,6 +357,7 @@ export const courses = [
     description:
       "Create beautiful cross-platform apps with Flutter, Dart, state management, and deploy to both iOS and Android.",
     icon: "🎨",
+    certificate:'https://i.ibb.co/bjcK6VKN/appdevelopment.png',
     image:'https://i.ibb.co/q3BmnW04/app-development-flutter.png',
     tag: "MOBILE",
     duration: "20 Weeks (5 Months)",
@@ -417,6 +415,7 @@ export const courses = [
     description:
       "Learn Linux, Docker, Kubernetes, AWS, Terraform, Ansible, CI/CD pipelines, and complete infrastructure automation.",
     icon: "☁️",
+    certificate:'https://i.ibb.co/JWB0JGwp/Blue-and-Yellow-Modern-Completion-Intership-Certificate.png',
     image:'https://i.ibb.co/Y4TY70HL/devop-and-cloud.png',
     tag: "DEVOPS",
     duration: "24 Weeks (6 Months)",
@@ -492,6 +491,7 @@ export const courses = [
   description:
     "Master Python from basics to advanced concepts including OOP, file handling, modules, automation, and real-world projects.",
   icon: "🐍",
+  certificate:'https://i.ibb.co/MDxDnDJf/python.png',
   image: "https://i.ibb.co/c0hBsdh/Development-Roadmap-Futuristic-Blue-Talking-Presentation.png",
   tag: "PYTHON",
   duration: "12 Weeks (3 Months)",
@@ -613,6 +613,7 @@ export const courses = [
   description:
     "Become a JavaScript expert with fundamentals, ES6+, DOM manipulation, async programming, and real projects.",
   icon: "🟨",
+  certificate:'https://i.ibb.co/HT7CCpww/javascript.png',
   image: "https://i.ibb.co/DgDdJQ7Q/Development-Roadmap-Futuristic-Blue-Talking-Presentation-1.png",
   tag: "JAVASCRIPT",
   duration: "12 Weeks (3 Months)",
@@ -666,6 +667,7 @@ export const courses = [
   description:
     "Learn the foundation of programming with C, covering memory management, pointers, and system-level programming.",
   icon: "🔵",
+  certificate:'https://i.ibb.co/1JPhYvCr/C.png',
   image: "https://i.ibb.co/YFnGL77N/c.png",
   tag: "C",
   duration: "12 Weeks (3 Months)",
@@ -712,6 +714,7 @@ export const courses = [
   description:
     "Master C++ with OOP, STL, memory management, and performance-oriented programming concepts.",
   icon: "⚙️",
+  certificate:'https://i.ibb.co/CKygF4WG/c.png',
   image: "https://i.ibb.co/fVWkrxy1/c.png",
   tag: "C++",
   duration: "12 Weeks (3 Months)",
