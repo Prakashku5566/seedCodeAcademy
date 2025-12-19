@@ -21,25 +21,25 @@ import ScrollTop from "./components/ScrollTop";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/seedCodeAcademy">
       <div className='min-h-screen'>
         <ScrollTop />
         <Navbar />
         <Routes>
-          <Route path='seedCodeAcademy/' element={<Home />} />
-          <Route path='seedCodeAcademy/courses' element={<CoursesSection />} />
-          <Route path='seedCodeAcademy/course/:id' element={<CoursePage />} />
-          <Route path='seedCodeAcademy/about' element={<AboutPage />} />
-          <Route path='seedCodeAcademy/contact' element={<ContactPage />} />
-          <Route path='seedCodeAcademy/careers' element={<CareersPage />} />
-          <Route path='seedCodeAcademy/blog' element={<BlogPage />} />
-          <Route path='seedCodeAcademy/documentation' element={<DocumentationPage />} />
-          <Route path='seedCodeAcademy/community' element={<CommunityPage />} />
-          <Route path='seedCodeAcademy/support' element={<SupportPage />} />
-          <Route path='seedCodeAcademy/faq' element={<FAQPage />} />
-          <Route path='seedCodeAcademy/privacy-policy' element={<PrivacyPolicyPage />} />
-          <Route path='seedCodeAcademy/terms-of-service' element={<TermsOfServicePage />} />
-          <Route path='seedCodeAcademy/refund-policy' element={<RefundPolicyPage />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/courses' element={<CoursesSection />} />
+          <Route path='/course/:id' element={<CoursePage />} />
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='/contact' element={<ContactPage />} />
+          <Route path='/careers' element={<CareersPage />} />
+          <Route path='/blog' element={<BlogPage />} />
+          <Route path='/documentation' element={<DocumentationPage />} />
+          <Route path='/community' element={<CommunityPage />} />
+          <Route path='/support' element={<SupportPage />} />
+          <Route path='/faq' element={<FAQPage />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
+          <Route path='/terms-of-service' element={<TermsOfServicePage />} />
+          <Route path='/refund-policy' element={<RefundPolicyPage />} />
         </Routes>
         <Footer />
       </div>

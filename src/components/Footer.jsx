@@ -3,10 +3,10 @@ import { Linkedin, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from "luci
 
 export default function Footer() {
   const scrollToCourses = () => {
-    if (window.location.pathname === 'seedCodeAcademy/') {
+    if (window.location.pathname === '/seedCodeAcademy/' || window.location.pathname === '/seedCodeAcademy') {
       document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' });
     } else {
-      window.location.href = 'seedCodeAcademy/courses';
+      window.location.href = '/seedCodeAcademy/courses';
     }
   };
 
@@ -64,22 +64,22 @@ export default function Footer() {
             <h4 className='font-semibold mb-4 text-white'>Company</h4>
             <ul className='space-y-3 text-gray-400'>
               <li>
-                <Link to='seedCodeAcademy/about' className='hover:text-primary transition'>
+                <Link to='/about' className='hover:text-primary transition'>
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to='seedCodeAcademy/careers' className='hover:text-primary transition'>
+                <Link to='/careers' className='hover:text-primary transition'>
                   Careers
                 </Link>
               </li>
               <li>
-                <Link to='seedCodeAcademy/blog' className='hover:text-primary transition'>
+                <Link to='/blog' className='hover:text-primary transition'>
                   Blog
                 </Link>
               </li>
               <li>
-                <Link to='seedCodeAcademy/contact' className='hover:text-primary transition'>
+                <Link to='/contact' className='hover:text-primary transition'>
                   Contact
                 </Link>
               </li>
@@ -91,22 +91,22 @@ export default function Footer() {
             <h4 className='font-semibold mb-4 text-white'>Resources</h4>
             <ul className='space-y-3 text-gray-400'>
               <li>
-                <Link to='seedCodeAcademy/documentation' className='hover:text-primary transition'>
+                <Link to='/documentation' className='hover:text-primary transition'>
                   Documentation
                 </Link>
               </li>
               <li>
-                <Link to='seedCodeAcademy/community' className='hover:text-primary transition'>
+                <Link to='/community' className='hover:text-primary transition'>
                   Community
                 </Link>
               </li>
               <li>
-                <Link to='seedCodeAcademy/support' className='hover:text-primary transition'>
+                <Link to='/support' className='hover:text-primary transition'>
                   Support
                 </Link>
               </li>
               <li>
-                <Link to='seedCodeAcademy/faq' className='hover:text-primary transition'>
+                <Link to='/faq' className='hover:text-primary transition'>
                   FAQ
                 </Link>
               </li>
@@ -118,17 +118,17 @@ export default function Footer() {
             <h4 className='font-semibold mb-4 text-white'>Legal</h4>
             <ul className='space-y-3 text-gray-400'>
               <li>
-                <Link to='seedCodeAcademy/privacy-policy' className='hover:text-primary transition'>
+                <Link to='/privacy-policy' className='hover:text-primary transition'>
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to='seedCodeAcademy/terms-of-service' className='hover:text-primary transition'>
+                <Link to='/terms-of-service' className='hover:text-primary transition'>
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link to='seedCodeAcademy/refund-policy' className='hover:text-primary transition'>
+                <Link to='/refund-policy' className='hover:text-primary transition'>
                   Refund Policy
                 </Link>
               </li>
@@ -146,10 +146,10 @@ export default function Footer() {
               <button onClick={scrollToCourses} className='hover:text-primary transition'>
                 Courses
               </button>
-              <Link to='seedCodeAcademy/about' className='hover:text-primary transition'>
+              <Link to='/about' className='hover:text-primary transition'>
                 About
               </Link>
-              <Link to='seedCodeAcademy/contact' className='hover:text-primary transition'>
+              <Link to='/contact' className='hover:text-primary transition'>
                 Contact
               </Link>
             </div>
