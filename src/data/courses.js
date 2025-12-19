@@ -492,7 +492,7 @@ export const courses = [
   description:
     "Master Python from basics to advanced concepts including OOP, file handling, modules, automation, and real-world projects.",
   icon: "🐍",
-  image: "https://i.ibb.co/xSJ9qF2p/python.png",
+  image: "https://i.ibb.co/c0hBsdh/Development-Roadmap-Futuristic-Blue-Talking-Presentation.png",
   tag: "PYTHON",
   duration: "12 Weeks (3 Months)",
   modules: 4,
@@ -613,7 +613,7 @@ export const courses = [
   description:
     "Become a JavaScript expert with fundamentals, ES6+, DOM manipulation, async programming, and real projects.",
   icon: "🟨",
-  image: "https://i.ibb.co/HfWtwWVK/javascript.png",
+  image: "https://i.ibb.co/DgDdJQ7Q/Development-Roadmap-Futuristic-Blue-Talking-Presentation-1.png",
   tag: "JAVASCRIPT",
   duration: "12 Weeks (3 Months)",
   modules: 4,
