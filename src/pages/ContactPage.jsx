@@ -28,13 +28,38 @@ export default function ContactPage() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Simulate form submission
+const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+        await fetch(
+            "https://script.google.com/macros/s/AKfycbz5lL8Cn1DovucQyRgXoCqzxXCN1no-FAK38nIlDHn8N6p_LS7cJMnm-8sXYyabn2ezDg/exec",
+            {
+                method: "POST",
+                mode: "no-cors",  
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            }
+        );
+
         setIsSubmitted(true);
         setTimeout(() => setIsSubmitted(false), 3000);
-        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
-    };
+
+        setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            subject: "",
+            message: "",
+        });
+    } catch (error) {
+        alert("Something went wrong");
+        console.error(error);
+    }
+};
+
 
     const contactInfo = [
         {
