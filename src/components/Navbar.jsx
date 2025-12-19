@@ -79,35 +79,35 @@ export default function Navbar() {
         {isOpen && (
           <div className='md:hidden mt-4 pb-4 space-y-4'>
             <Link
-              to='/'
+              to='seedCodeAcademy/'
               onClick={handleHomeClick}
               className='block hover:text-primary transition'
             >
               Home
             </Link>
             <a
-              href='/courses'
+              href='seedCodeAcademy/courses'
               onClick={handleCoursesClick}
               className='block hover:text-primary transition cursor-pointer'
             >
               Courses
             </a>
             <Link
-              to='/about'
+              to='seedCodeAcademy/about'
               className='block hover:text-primary transition'
               onClick={() => setIsOpen(false)}
             >
               About
             </Link>
             <Link
-              to='/contact'
+              to='seedCodeAcademy/contact'
               className='block hover:text-primary transition'
               onClick={() => setIsOpen(false)}
             >
               Contact
             </Link>
             <Link
-              to='/home'
+              to='seedCodeAcademy/home'
               onClick={handleCoursesClick}
               className='block w-full px-6 py-2 bg-gradient-to-r from-primary to-primary-dark rounded-full font-semibold text-center'
             >
