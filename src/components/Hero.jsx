@@ -6,6 +6,9 @@ export default function Hero() {
   const handleExploreClick = () => {
     navigate('/courses');
   }
+  const handleWatchDemoClick = () => {
+    window.open('https://youtu.be/R-92TckkNlY?si=S5ORScnG1r07KXIH', '_blank');
+  }
   return (
     <section className='min-h-screen flex items-center justify-center relative overflow-hidden pt-20'>
       {/* Animated Background */}
@@ -27,7 +30,7 @@ export default function Hero() {
           <button onClick={handleExploreClick} className='px-8 py-4 bg-gradient-to-r from-primary to-primary-dark rounded-full font-semibold text-lg flex items-center gap-2 hover:shadow-2xl hover:shadow-primary/50 transition transform hover:scale-105'>
             Explore Courses <ArrowRight size={20} />
           </button>
-          <button className='px-8 py-4 border-2 border-primary rounded-full font-semibold text-lg flex items-center gap-2 hover:bg-primary/10 transition'>
+          <button onClick={handleWatchDemoClick} className='px-8 py-4 border-2 border-primary rounded-full font-semibold text-lg flex items-center gap-2 hover:bg-primary/10 transition'>
             <Play size={20} /> Watch Demo
           </button>
         </div>
