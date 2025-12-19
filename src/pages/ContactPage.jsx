@@ -40,8 +40,8 @@ export default function ContactPage() {
         {
             icon: <Mail className="text-primary" size={24} />,
             title: "Email Us",
-            value: "seedcodeacademy@gmail.com",
-            link: "mailto:seedcodeacademy@gmail.com"
+            value: "hello@seedcode.academy",
+            link: "mailto:hello@seedcode.academy"
         },
         {
             icon: <Phone className="text-primary" size={24} />,
@@ -66,8 +66,8 @@ export default function ContactPage() {
     const socials = [
         { icon: <Linkedin size={24} />, name: "LinkedIn", link: "https://www.linkedin.com/in/seedcode-Academy-202b4439a/" },
         { icon: <Twitter size={24} />, name: "Twitter", link: "https://x.com/seedCodeAcademy" },
-        { icon: <Instagram size={24} />, name: "Instagram", link: "https://www.instagram.com/seedcode_academy/?igsh=ZmVmeWR1em43N2Yz#" },
-        { icon: <Youtube size={24} />, name: "YouTube", link: "https://www.youtube.com/@seedcodeacademy" },
+        { icon: <Instagram size={24} />, name: "Instagram", link: "https://www.instagram.com/seedcode_academy?igsh=ZmVmeWR1em43N2Yz" },
+        { icon: <Youtube size={24} />, name: "YouTube", link: "https://youtube.com/@seedcodeacademy?si=YeVTELCvweUt8kEx" },
     ];
 
     const faqs = [
@@ -197,12 +197,12 @@ export default function ContactPage() {
                                             required
                                             className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:border-primary focus:outline-none transition"
                                         >
-                                            <option value="">Select a topic</option>
-                                            <option value="courses">Course Inquiry</option>
-                                            <option value="support">Technical Support</option>
-                                            <option value="partnership">Partnership</option>
-                                            <option value="careers">Careers</option>
-                                            <option value="other">Other</option>
+                                            <option value="" className="bg-white text-black">Select a topic</option>
+                                            <option value="courses" className="bg-white text-black">Course Inquiry</option>
+                                            <option value="support" className="bg-white text-black">Technical Support</option>
+                                            <option value="partnership" className="bg-white text-black">Partnership</option>
+                                            <option value="careers" className="bg-white text-black">Careers</option>
+                                            <option value="other" className="bg-white text-black">Other</option>
                                         </select>
                                     </div>
                                 </div>
@@ -251,7 +251,6 @@ export default function ContactPage() {
                                     <a
                                         key={index}
                                         href={social.link}
-                                        target="_blank"
                                         className="flex items-center gap-3 p-4 bg-white/5 rounded-xl hover:bg-primary/20 transition group"
                                     >
                                         <span className="text-gray-400 group-hover:text-primary transition">
