@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -21,7 +21,7 @@ import ScrollTop from "./components/ScrollTop";
 
 function App() {
   return (
-    <BrowserRouter basename="/seedCodeAcademy">
+    <HashRouter>
       <div className='min-h-screen'>
         <ScrollTop />
         <Navbar />
@@ -43,7 +43,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

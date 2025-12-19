@@ -1,13 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Linkedin, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
+  const navigate = useNavigate();
+
   const scrollToCourses = () => {
-    if (window.location.pathname === '/seedCodeAcademy/' || window.location.pathname === '/seedCodeAcademy') {
-      document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      window.location.href = '/seedCodeAcademy/courses';
-    }
+    navigate('/courses');
   };
 
   return (
