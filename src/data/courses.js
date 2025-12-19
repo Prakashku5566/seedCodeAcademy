@@ -5,6 +5,7 @@ export const courses = [
     description:
       "Master the complete MERN stack from HTML/CSS to production deployment with authentication, real-time features, and cloud hosting.",
     icon: "💻",
+    image: 'https://i.ibb.co/PZDPgZ6m/full-Stack-mern.png',
     tag: "FULL STACK",
     duration: "28 Weeks (7 Months)",
     modules: 7,
@@ -95,6 +96,7 @@ export const courses = [
     description:
       "Learn Django framework, REST APIs, PostgreSQL, React integration, and AWS deployment for enterprise-level applications.",
     icon: "🐍",
+    image:'https://i.ibb.co/WN552CXX/full-Stack-python.png',
     tag: "FULL STACK",
     duration: "24 Weeks (6 Months)",
     modules: 6,
@@ -173,6 +175,7 @@ export const courses = [
     description:
       "Become a React expert with HTML, CSS, JavaScript, Redux Toolkit, performance optimization, and production-ready projects.",
     icon: "⚛️",
+    image:'https://i.ibb.co/MyScpn93/frontend-deevelopment.png',
     tag: "FRONTEND",
     duration: "16 Weeks (4 Months)",
     modules: 4,
@@ -230,6 +233,7 @@ export const courses = [
     description:
       "Master backend development with APIs, databases, authentication, microservices, and cloud deployment strategies.",
     icon: "🔧",
+    image:'https://i.ibb.co/p6gmm6ST/backend.png',
     tag: "BACKEND",
     duration: "20 Weeks (5 Months)",
     modules: 5,
@@ -298,6 +302,7 @@ export const courses = [
     description:
       "Build cross-platform mobile apps with navigation, API integration, device features, and publish to App Store and Play Store.",
     icon: "📱",
+    image:'https://i.ibb.co/ym4s1y96/app-development-react.png',
     tag: "MOBILE",
     duration: "20 Weeks (5 Months)",
     modules: 4,
@@ -355,6 +360,7 @@ export const courses = [
     description:
       "Create beautiful cross-platform apps with Flutter, Dart, state management, and deploy to both iOS and Android.",
     icon: "🎨",
+    image:'https://i.ibb.co/q3BmnW04/app-development-flutter.png',
     tag: "MOBILE",
     duration: "20 Weeks (5 Months)",
     modules: 4,
@@ -411,6 +417,7 @@ export const courses = [
     description:
       "Learn Linux, Docker, Kubernetes, AWS, Terraform, Ansible, CI/CD pipelines, and complete infrastructure automation.",
     icon: "☁️",
+    image:'https://i.ibb.co/Y4TY70HL/devop-and-cloud.png',
     tag: "DEVOPS",
     duration: "24 Weeks (6 Months)",
     modules: 6,
@@ -479,4 +486,280 @@ export const courses = [
       },
     ],
   },
+  {
+  id: "python",
+  title: "Python Programming",
+  description:
+    "Master Python from basics to advanced concepts including OOP, file handling, modules, automation, and real-world projects.",
+  icon: "🐍",
+  image: "https://i.ibb.co/xSJ9qF2p/python.png",
+  tag: "PYTHON",
+  duration: "12 Weeks (3 Months)",
+  modules: 4,
+  price: 7999,
+  curriculum: [
+    {
+      title: "Python Basics",
+      weeks: "Weeks 1-3",
+      topics: [
+        "Syntax & variables",
+        "Data types",
+        "Conditional statements",
+        "Loops",
+      ],
+      project: "Number Guessing Game",
+    },
+    {
+      title: "Functions & Modules",
+      weeks: "Weeks 4-6",
+      topics: [
+        "Functions",
+        "Modules & packages",
+        "File handling",
+        "Exception handling",
+      ],
+      project: "File Management System",
+    },
+    {
+      title: "OOP in Python",
+      weeks: "Weeks 6-9",
+      topics: [
+        "Classes & objects",
+        "Inheritance",
+        "Polymorphism",
+        "Encapsulation",
+      ],
+      project: "Bank Management System",
+    },
+    {
+      title: "Advanced Python",
+      weeks: "Weeks 10–12",
+      topics: [
+        "Libraries (NumPy, Pandas)",
+        "Automation",
+        "APIs",
+        "Mini projects",
+      ],
+      project: "Automation Tool",
+    },
+  ],
+},
+// {
+//   id: "java",
+//   title: "Java Programming",
+//   description:
+//     "Learn Java from core concepts to OOP, collections, multithreading, JDBC, and enterprise-level programming.",
+//   icon: "☕",
+//   image: "https://i.ibb.co/0M1j2Xy/java-course.png",
+//   tag: "JAVA",
+//   duration: "20 Weeks (5 Months)",
+//   modules: 5,
+//   price: 17999,
+//   curriculum: [
+//     {
+//       title: "Java Fundamentals",
+//       weeks: "Weeks 1–4",
+//       topics: [
+//         "JDK & JVM",
+//         "Variables & data types",
+//         "Loops",
+//         "Arrays",
+//       ],
+//       project: "Student Result System",
+//     },
+//     {
+//       title: "OOP Concepts",
+//       weeks: "Weeks 5–8",
+//       topics: [
+//         "Classes & objects",
+//         "Inheritance",
+//         "Polymorphism",
+//         "Abstraction",
+//       ],
+//       project: "Library Management System",
+//     },
+//     {
+//       title: "Advanced Java",
+//       weeks: "Weeks 9–12",
+//       topics: [
+//         "Exception handling",
+//         "Collections framework",
+//         "Generics",
+//       ],
+//       project: "Inventory System",
+//     },
+//     {
+//       title: "Multithreading & JDBC",
+//       weeks: "Weeks 13–16",
+//       topics: [
+//         "Threads",
+//         "Synchronization",
+//         "JDBC",
+//         "Database connectivity",
+//       ],
+//       project: "Employee Database App",
+//     },
+//     {
+//       title: "Mini Project",
+//       weeks: "Weeks 17–20",
+//       topics: ["Project planning", "Implementation", "Testing"],
+//       project: "Online Banking System",
+//     },
+//   ],
+// },
+{
+  id: "javascript",
+  title: "JavaScript Development",
+  description:
+    "Become a JavaScript expert with fundamentals, ES6+, DOM manipulation, async programming, and real projects.",
+  icon: "🟨",
+  image: "https://i.ibb.co/HfWtwWVK/javascript.png",
+  tag: "JAVASCRIPT",
+  duration: "12 Weeks (3 Months)",
+  modules: 4,
+  price: 7999,
+  curriculum: [
+    {
+      title: "JavaScript Basics",
+      weeks: "Weeks 1–3",
+      topics: [
+        "Variables",
+        "Data types",
+        "Operators",
+        "Control flow",
+      ],
+      project: "Calculator App",
+    },
+    {
+      title: "Functions & DOM",
+      weeks: "Weeks 4–6",
+      topics: [
+        "Functions",
+        "DOM manipulation",
+        "Events",
+        "Forms",
+      ],
+      project: "To-Do List App",
+    },
+    {
+      title: "Advanced JavaScript",
+      weeks: "Weeks 7–9",
+      topics: [
+        "ES6+",
+        "Promises",
+        "Async/Await",
+        "APIs",
+      ],
+      project: "Weather App",
+    },
+    {
+      title: "Mini Projects",
+      weeks: "Weeks 10–12",
+      topics: ["Optimization", "Debugging", "Best practices"],
+      project: "E-commerce Frontend",
+    },
+  ],
+},
+{
+  id: "c",
+  title: "C Programming",
+  description:
+    "Learn the foundation of programming with C, covering memory management, pointers, and system-level programming.",
+  icon: "🔵",
+  image: "https://i.ibb.co/YFnGL77N/c.png",
+  tag: "C",
+  duration: "12 Weeks (3 Months)",
+  modules: 3,
+  price: 7999,
+  curriculum: [
+    {
+      title: "C Basics",
+      weeks: "Weeks 1–4",
+      topics: [
+        "Syntax",
+        "Data types",
+        "Operators",
+        "Control statements",
+      ],
+      project: "Basic Calculator",
+    },
+    {
+      title: "Functions & Arrays",
+      weeks: "Weeks 5–8",
+      topics: [
+        "Functions",
+        "Arrays",
+        "Strings",
+        "Pointers",
+      ],
+      project: "Student Record System",
+    },
+    {
+      title: "Advanced C",
+      weeks: "Weeks 9–12",
+      topics: [
+        "Structures",
+        "File handling",
+        "Dynamic memory",
+      ],
+      project: "File Management Tool",
+    },
+  ],
+},
+{
+  id: "cpp",
+  title: "C++ Programming",
+  description:
+    "Master C++ with OOP, STL, memory management, and performance-oriented programming concepts.",
+  icon: "⚙️",
+  image: "https://i.ibb.co/fVWkrxy1/c.png",
+  tag: "C++",
+  duration: "12 Weeks (3 Months)",
+  modules: 4,
+  price: 7999,
+  curriculum: [
+    {
+      title: "C++ Fundamentals",
+      weeks: "Weeks 1–3",
+      topics: [
+        "Syntax",
+        "Variables",
+        "Control structures",
+        "Functions",
+      ],
+      project: "Calculator Program",
+    },
+    {
+      title: "OOP in C++",
+      weeks: "Weeks 4–6",
+      topics: [
+        "Classes & objects",
+        "Inheritance",
+        "Polymorphism",
+        "Encapsulation",
+      ],
+      project: "Bank Management System",
+    },
+    {
+      title: "STL & Advanced Concepts",
+      weeks: "Weeks 7–9",
+      topics: [
+        "STL containers",
+        "Iterators",
+        "Algorithms",
+      ],
+      project: "Data Processing Tool",
+    },
+    {
+      title: "Mini Project",
+      weeks: "Weeks 10–12",
+      topics: ["Optimization", "Debugging", "Best practices"],
+      project: "Game or Utility App",
+    },
+  ],
+}
+
+
+
+
 ];
