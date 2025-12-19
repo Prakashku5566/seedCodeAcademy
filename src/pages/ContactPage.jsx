@@ -276,6 +276,8 @@ const handleSubmit = async (e) => {
                                     <a
                                         key={index}
                                         href={social.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="flex items-center gap-3 p-4 bg-white/5 rounded-xl hover:bg-primary/20 transition group"
                                     >
                                         <span className="text-gray-400 group-hover:text-primary transition">
