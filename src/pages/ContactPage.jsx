@@ -40,8 +40,8 @@ export default function ContactPage() {
         {
             icon: <Mail className="text-primary" size={24} />,
             title: "Email Us",
-            value: "hello@seedcode.academy",
-            link: "mailto:hello@seedcode.academy"
+            value: "seedcodeacademy@gmail.com",
+            link: "mailto:seedcodeacademy@gmail.com"
         },
         {
             icon: <Phone className="text-primary" size={24} />,
@@ -64,10 +64,10 @@ export default function ContactPage() {
     ];
 
     const socials = [
-        { icon: <Linkedin size={24} />, name: "LinkedIn", link: "#" },
-        { icon: <Twitter size={24} />, name: "Twitter", link: "#" },
-        { icon: <Instagram size={24} />, name: "Instagram", link: "#" },
-        { icon: <Youtube size={24} />, name: "YouTube", link: "#" },
+        { icon: <Linkedin size={24} />, name: "LinkedIn", link: "https://www.linkedin.com/in/seedcode-Academy-202b4439a/" },
+        { icon: <Twitter size={24} />, name: "Twitter", link: "https://x.com/seedCodeAcademy" },
+        { icon: <Instagram size={24} />, name: "Instagram", link: "https://www.instagram.com/seedcode_academy/?igsh=ZmVmeWR1em43N2Yz#" },
+        { icon: <Youtube size={24} />, name: "YouTube", link: "https://www.youtube.com/@seedcodeacademy" },
     ];
 
     const faqs = [
@@ -251,6 +251,7 @@ export default function ContactPage() {
                                     <a
                                         key={index}
                                         href={social.link}
+                                        target="_blank"
                                         className="flex items-center gap-3 p-4 bg-white/5 rounded-xl hover:bg-primary/20 transition group"
                                     >
                                         <span className="text-gray-400 group-hover:text-primary transition">

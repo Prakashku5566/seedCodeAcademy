@@ -6,7 +6,11 @@ export default function CourseCard({ course }) {
     <div className='glass-card overflow-hidden hover:border-primary/50 transition transform hover:-translate-y-2'>
       {/* Course Icon/Image */}
       <div className='h-48 bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-6xl'>
-        {course.icon}
+        {course.image ? (
+          <img src={course.image} alt={course.title} className="h-full w-full object-cover" />
+        ) : (
+          course.icon
+        )}
       </div>
 
       {/* Content */}

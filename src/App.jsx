@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -16,31 +16,34 @@ import TermsOfServicePage from "./pages/TermsOfServicePage";
 import RefundPolicyPage from "./pages/RefundPolicyPage";
 import "./index.css";
 import CoursesSection from "./pages/CoursesSection";
+import ScrollTop from "./components/ScrollTop";
+
 
 function App() {
   return (
-    <Router>
-      <div className='min-h-screen'>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/courses' element={<CoursesSection />} />
-          <Route path='/course/:id' element={<CoursePage />} />
-          <Route path='/about' element={<AboutPage />} />
-          <Route path='/contact' element={<ContactPage />} />
-          <Route path='/careers' element={<CareersPage />} />
-          <Route path='/blog' element={<BlogPage />} />
-          <Route path='/documentation' element={<DocumentationPage />} />
-          <Route path='/community' element={<CommunityPage />} />
-          <Route path='/support' element={<SupportPage />} />
-          <Route path='/faq' element={<FAQPage />} />
-          <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
-          <Route path='/terms-of-service' element={<TermsOfServicePage />} />
-          <Route path='/refund-policy' element={<RefundPolicyPage />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <BrowserRouter>
+        <div className='min-h-screen'>
+          <ScrollTop />
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/courses' element={<CoursesSection />} />
+            <Route path='/course/:id' element={<CoursePage />} />
+            <Route path='/about' element={<AboutPage />} />
+            <Route path='/contact' element={<ContactPage />} />
+            <Route path='/careers' element={<CareersPage />} />
+            <Route path='/blog' element={<BlogPage />} />
+            <Route path='/documentation' element={<DocumentationPage />} />
+            <Route path='/community' element={<CommunityPage />} />
+            <Route path='/support' element={<SupportPage />} />
+            <Route path='/faq' element={<FAQPage />} />
+            <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
+            <Route path='/terms-of-service' element={<TermsOfServicePage />} />
+            <Route path='/refund-policy' element={<RefundPolicyPage />} />
+          </Routes>
+          <Footer />
+        </div>
+    </BrowserRouter>
   );
 }
 
