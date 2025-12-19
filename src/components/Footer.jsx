@@ -44,16 +44,16 @@ export default function Footer() {
             </div>
             {/* Social Links */}
             <div className='flex gap-4 mt-6'>
-              <a href='#' className='w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-primary/20 hover:text-primary transition'>
+              <a target="_blank" href='https://www.linkedin.com/in/seedcode-Academy-202b4439a/' className='w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-primary/20 hover:text-primary transition'>
                 <Linkedin size={20} />
               </a>
-              <a href='#' className='w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-primary/20 hover:text-primary transition'>
+              <a target="_blank" href='https://x.com/seedCodeAcademy' className='w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-primary/20 hover:text-primary transition'>
                 <Twitter size={20} />
               </a>
-              <a href='#' className='w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-primary/20 hover:text-primary transition'>
+              <a target="_blank" href='https://www.instagram.com/seedcode_academy/?igsh=ZmVmeWR1em43N2Yz#' className='w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-primary/20 hover:text-primary transition'>
                 <Instagram size={20} />
               </a>
-              <a href='#' className='w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-primary/20 hover:text-primary transition'>
+              <a target="_blank" href='https://www.youtube.com/@seedcodeacademy' className='w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-primary/20 hover:text-primary transition'>
                 <Youtube size={20} />
               </a>
             </div>
