@@ -46,7 +46,7 @@ export default function AboutPage() {
     const team = [
         { name: "Shalu Bharti", role: "Instructor", emoji: "🎯" },
         { name: "Tv Singh", role: "Instructor", emoji: "👨‍🎓" },
-        { name: "Bk Gupta", role: "Instructor", emoji: "👩‍🏫" },
+        { name: "B Gupta", role: "Instructor", emoji: "👩‍🏫" },
         { name: "Pk Singh", role: "Instructor", emoji: "👨‍💻" },
     ];
 
