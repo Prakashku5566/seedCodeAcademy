@@ -80,9 +80,9 @@ export default function CoursePage() {
                   <span className='text-gray-400 line-through text-lg'>₹{(course.price * 1.5).toLocaleString()}</span>
                   <span className='text-5xl font-black gradient-text ml-3'>₹{course.price.toLocaleString()}</span>
                 </div>
-                <button className='px-10 py-4 bg-gradient-to-r from-primary to-primary-dark rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-primary/50 transition transform hover:scale-105 flex items-center gap-2'>
+                <a href='https://docs.google.com/forms/d/e/1FAIpQLSdMOpWeixhuqmFgXNQzeNjMTLoXnKtWmjtMniDDfrzfSxjnfg/viewform' target='_blank' rel='noopener noreferrer' className='px-10 py-4 bg-gradient-to-r from-primary to-primary-dark rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-primary/50 transition transform hover:scale-105 flex items-center gap-2'>
                   <Zap size={20} /> Enroll Now
-                </button>
+                </a>
               </div>
             </div>
 
@@ -299,9 +299,9 @@ export default function CoursePage() {
               Join thousands of students who have transformed their careers with {course.title}
             </p>
             <div className='flex flex-wrap justify-center gap-4'>
-              <button className='px-10 py-4 bg-gradient-to-r from-primary to-primary-dark rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-primary/50 transition transform hover:scale-105'>
+              <a href='https://docs.google.com/forms/d/e/1FAIpQLSdMOpWeixhuqmFgXNQzeNjMTLoXnKtWmjtMniDDfrzfSxjnfg/viewform' target='_blank' rel='noopener noreferrer' className='px-10 py-4 bg-gradient-to-r from-primary to-primary-dark rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-primary/50 transition transform hover:scale-105'>
                 Enroll Now - ₹{course.price.toLocaleString()}
-              </button>
+              </a>
               <button className='px-10 py-4 glass-card hover:bg-white/10 rounded-full font-bold text-lg transition'>
                 Download Syllabus
               </button>
