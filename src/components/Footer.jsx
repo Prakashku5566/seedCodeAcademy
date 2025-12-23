@@ -74,9 +74,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to='/blog' className='hover:text-primary transition'>
+                {/* <Link to='/blog' className='hover:text-primary transition'>
                   Blog
-                </Link>
+                </Link> */}
               </li>
               <li>
                 <Link to='/contact' className='hover:text-primary transition'>
