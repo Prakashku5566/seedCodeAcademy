@@ -27,14 +27,14 @@ export default function Footer() {
             <div className='space-y-3 text-gray-400'>
               <div className='flex items-center gap-3'>
                 <Mail size={18} className='text-primary' />
-                <a href='mailto:hello@seedcode.academy' className='hover:text-primary transition'>
-                  hello@seedcode.academy
+                <a href='mailto:seedcodeacademy@gmail.com' className='hover:text-primary transition'>
+                  seedcodeacademy@gmail.com
                 </a>
               </div>
               <div className='flex items-center gap-3'>
                 <Phone size={18} className='text-primary' />
-                <a href='tel:+919876543210' className='hover:text-primary transition'>
-                  +91 98765 43210
+                <a href='tel:+918252540260' className='hover:text-primary transition'>
+                  +91 82525 40260
                 </a>
               </div>
               <div className='flex items-center gap-3'>

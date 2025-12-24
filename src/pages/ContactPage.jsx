@@ -65,14 +65,14 @@ export default function ContactPage() {
         {
             icon: <Mail className="text-primary" size={24} />,
             title: "Email Us",
-            value: "hello@seedcode.academy",
-            link: "mailto:hello@seedcode.academy"
+            value: "seedcodeacademy@gmail.com",
+            link: "mailto:seedcodeacademy@gmail.com"
         },
         {
             icon: <Phone className="text-primary" size={24} />,
             title: "Call Us",
-            value: "+91 98765 43210",
-            link: "tel:+919876543210"
+            value: "+91  8252540260",
+            link: "tel:+918252540260"
         },
         {
             icon: <MapPin className="text-primary" size={24} />,
@@ -210,7 +210,7 @@ export default function ContactPage() {
                                             value={formData.phone}
                                             onChange={handleChange}
                                             className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:border-primary focus:outline-none transition"
-                                            placeholder="+91 98765 43210"
+                                            placeholder="+91 8252540260"
                                         />
                                     </div>
                                     <div>

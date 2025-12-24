@@ -302,9 +302,16 @@ export default function CoursePage() {
               <a href='https://docs.google.com/forms/d/e/1FAIpQLSdMOpWeixhuqmFgXNQzeNjMTLoXnKtWmjtMniDDfrzfSxjnfg/viewform' target='_blank' rel='noopener noreferrer' className='px-10 py-4 bg-gradient-to-r from-primary to-primary-dark rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-primary/50 transition transform hover:scale-105'>
                 Enroll Now - ₹{course.price.toLocaleString()}
               </a>
-              <button className='px-10 py-4 glass-card hover:bg-white/10 rounded-full font-bold text-lg transition'>
-                Download Syllabus
-              </button>
+              {course.downloadSyllabus && (
+                <a
+                  href={course.downloadSyllabus}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='px-10 py-4 glass-card hover:bg-white/10 rounded-full font-bold text-lg transition'
+                >
+                  Download Syllabus
+                </a>
+              )}
             </div>
           </div>
         </div>
