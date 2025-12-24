@@ -1,6 +1,10 @@
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+<<<<<<< HEAD
+=======
+import logo from "../assets/logo.png";
+>>>>>>> master
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,8 +50,22 @@ export default function Navbar() {
       <div className='max-w-7xl mx-auto px-6 py-4'>
         <div className='flex items-center justify-between'>
           {/* Logo */}
+<<<<<<< HEAD
           <Link to='/' onClick={handleHomeClick} className='text-2xl font-bold gradient-text'>
             SEEDCODE ACADEMY
+=======
+          <Link
+            to="/"
+            onClick={handleHomeClick}
+            className="flex items-center gap-2 text-2xl font-bold"
+          >
+            <img
+              src={logo}
+              alt="SeedCode Academy Logo"
+              className="h-12 w-auto"
+            />
+            <span className="gradient-text">SEEDCODE ACADEMY</span>
+>>>>>>> master
           </Link>
 
           {/* Desktop Menu */}
