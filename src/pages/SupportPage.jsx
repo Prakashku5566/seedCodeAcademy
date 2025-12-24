@@ -155,8 +155,8 @@ export default function SupportPage() {
                                 <p className="text-gray-400 text-sm mb-4">
                                     Our priority support line is available for critical issues.
                                 </p>
-                                <a href="tel:+919876543210" className="text-primary font-semibold hover:underline">
-                                    +91 98765 43210
+                                <a href="tel:+918252540260" className="text-primary font-semibold hover:underline">
+                                    +91 82525 40260
                                 </a>
                             </div>
                         </div>
