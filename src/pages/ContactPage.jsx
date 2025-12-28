@@ -77,7 +77,7 @@ export default function ContactPage() {
         {
             icon: <MapPin className="text-primary" size={24} />,
             title: "Visit Us",
-            value: "Bengaluru, Karnataka, India",
+            value: "Jaipur, Rajasthan, India",
             link: "#"
         },
         {
