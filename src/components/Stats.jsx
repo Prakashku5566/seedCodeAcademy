@@ -2,10 +2,10 @@ import { Users, BookOpen, Award, TrendingUp } from "lucide-react";
 
 export default function Stats() {
   const stats = [
-    { icon: Users, number: "50K+", label: "Students Enrolled" },
-    { icon: BookOpen, number: "100+", label: "Expert Instructors" },
-    { icon: Award, number: "500K+", label: "Community Members" },
-    { icon: TrendingUp, number: "98%", label: "Success Rate" },
+    { icon: Users, number: "10K+", label: "Students Enrolled" },
+    { icon: BookOpen, number: "50+", label: "Expert Instructors" },
+    { icon: Award, number: "16K+", label: "Community Members" },
+    { icon: TrendingUp, number: "99%", label: "Success Rate" },
   ];
 
   return (

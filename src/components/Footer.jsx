@@ -39,7 +39,7 @@ export default function Footer() {
               </div>
               <div className='flex items-center gap-3'>
                 <MapPin size={18} className='text-primary' />
-                <span>Bengaluru, Karnataka, India</span>
+                <span>Jaipur, Rajasthan, India</span>
               </div>
             </div>
             {/* Social Links */}
